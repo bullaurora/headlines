@@ -1,14 +1,11 @@
 <template>
-<div >
-    <router-view></router-view>
-
+<div>
+    
 </div>
 </template>
 
 <script>
-
 export default {
-  name:'App',
   created () {},
   data () {
     return {}
@@ -21,7 +18,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang='less'>
 
 </style>
-

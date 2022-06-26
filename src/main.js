@@ -1,7 +1,7 @@
 import Vue from 'vue'
-import App from './App.vue'
+import App from '@/App.vue'
 import '@/styles/index.less'
-import '@/styles/reset.css'
+
 import 'amfe-flexible'
 import router from '@/router'
 import vant from "@/vant";

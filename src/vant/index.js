@@ -11,7 +11,11 @@ import {
   CellGroup,
   Icon ,
   Search ,
-  List
+  List,
+  Field,
+  Form,
+  Toast,
+  CountDown
 } from 'vant'
 
 // 通过install方法添加到实例中
@@ -30,6 +34,10 @@ const vant = {
     app.use(Icon )
     app.use(Search )
     app.use(List )
+    app.use(Field )
+    app.use(Form )
+    app.use(Toast )
+    app.use(CountDown )
   },
 }
 

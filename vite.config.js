@@ -1,12 +1,14 @@
 import { createVuePlugin } from 'vite-plugin-vue2'
 import vitePluginImp from 'vite-plugin-imp'
-import path, { resolve } from 'path'
-function _resolve(dir) {
-  return path.resolve(__dirname, dir)
-}
+import eslintPlugin from 'vite-plugin-eslint'
+import  { resolve } from 'path'
+
 export default {
   plugins: [
     createVuePlugin(),
+    eslintPlugin({
+      include: ['src/**/*.js', 'src/**/*.vue', 'src/*.js', 'src/*.vue']
+    }),
     vitePluginImp({
       //组件按需导入
       libList: [
@@ -34,7 +36,7 @@ export default {
         replacement: resolve(__dirname, 'src/assets'),
       },
     ],
-   
+    extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue']
   },
   css: {
     preprocessorOptions: {
