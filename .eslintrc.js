@@ -12,6 +12,7 @@ module.exports = {
   rules: {
     'no-undef': 0,
     'vue/multi-word-component-names': 0,
-    'vue/comment-directive':0
+    'vue/comment-directive':0,
+    'vue/no-mutating-props':0
   },
 }

@@ -17,6 +17,8 @@ module.exports = {
       },
       propList: ['*'],
       unitPrecision: 5,
+      exclude: function (file) { return file.indexOf('github-markdown') !== -1; }
+      
     },
   },
 }
